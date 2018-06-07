@@ -17,7 +17,11 @@ maxlogfilesize=${LND_MAX_LOG_FILESIZE:=10}
 maxpendingchannels=${LND_MAX_PENDING_CHANNELS:=10}
 alias=${LND_ALIAS:=pi-lnd}
 color=${LND_COLOR:=#FFFF00}
-no-macaroons=true
+
+restlisten=0.0.0.0:8080
+listen=0.0.0.0:9735
+rpclisten=0.0.0.0:10009
+
 
 [Bitcoin]
 bitcoin.active=1
